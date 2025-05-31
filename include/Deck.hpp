@@ -8,7 +8,8 @@ using namespace std;
 
 class Card{
     public:
-        Card(string &suite, string &rank, int value) : suite(suite), rank(rank), value(value) {};
+        Card(const string &suite,const string &rank,const int value) 
+            : suite(suite), rank(rank), value(value) {};
 
         string getSuite() const {return suite;};
         string getRank() const {return rank;};
@@ -26,12 +27,11 @@ class Card{
 
 class Deck {
     private:
-        const vector<Card> deck;      // cannot have the size defined to 52 here as it is not defined but declared here. will do so in the constructor.
-        const int deck_size = 52;
+        const vector<Card> deck; 
 
-        const vector<string> suites_types = {"Hearts", "Diamonds", "Clubs", "Spades"};
-        const vector<string> rank_types = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
-        const vector<int> value_types = {2,3,4,5,6,7,8,9,10,11,12,13,14};
+        static const vector<string> suites_types;
+        static const vector<string> rank_types;
+        static const vector<int> value_types;
 
 
     public:

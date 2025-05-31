@@ -1,3 +1,7 @@
+# run cmake with <cmake .. -G "MinGW Makefiles"> as we dont have nmake installed from visual studion which is required for the default generator.
+# <cmake --build . > 
+#
+
 cmake_minimum_required(VERSION 3.10)
 
 project(Card_War 
