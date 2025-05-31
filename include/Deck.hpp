@@ -3,7 +3,6 @@
 
 #include <string>
 #include <vector>
-#include <iostream>
 
 using namespace std;
 
@@ -39,6 +38,8 @@ class Deck {
         Deck() : deck(createDeck()) {};
 
         vector<Card> createDeck();
+
+        vector<Card> getDeck() const {return deck;};
 
 };
 
