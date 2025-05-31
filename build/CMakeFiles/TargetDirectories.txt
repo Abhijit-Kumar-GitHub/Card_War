@@ -1,0 +1,3 @@
+C:/WORKING_FOLDER/PROJECTS/WAR/Card_War/build/CMakeFiles/Card_War.dir
+C:/WORKING_FOLDER/PROJECTS/WAR/Card_War/build/CMakeFiles/edit_cache.dir
+C:/WORKING_FOLDER/PROJECTS/WAR/Card_War/build/CMakeFiles/rebuild_cache.dir
