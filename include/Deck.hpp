@@ -15,12 +15,14 @@ class Card{
         string getRank() const {return rank;};
         int getValue() const {return value;};
 
+        void swap(Card &a, Card &b);
+
         // no settters as the cards are immutable and thus should not change after creation and are made const.
 
-    private:
-        const string suite;
-        const string rank;
-        const int value;
+    private:                    // removing the const from the class members as they need to be swapped :/
+        string suite;
+        string rank;
+        int value;
 
 
 };
@@ -40,6 +42,10 @@ class Deck {
         vector<Card> createDeck();
 
         vector<Card> getDeck() const {return deck;};
+
+        vector<Card> shuffleDeck() const;
+
+        void dealDeck(vector<Card> &shuffled_deck, vector<Card> &player1, vector<Card> &player2);
 
 };
 
