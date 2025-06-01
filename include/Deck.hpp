@@ -15,7 +15,7 @@ class Card{
         string getRank() const {return rank;};
         int getValue() const {return value;};
 
-        void swap(Card &a, Card &b);
+        void swap(Card &a, Card &b);        // as the shuffle calls to swap the cards and as Card dt is not standard so have to define it.
 
         // no settters as the cards are immutable and thus should not change after creation and are made const.
 
