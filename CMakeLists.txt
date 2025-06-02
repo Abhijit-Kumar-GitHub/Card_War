@@ -1,6 +1,6 @@
 # run cmake with <cmake .. -G "MinGW Makefiles"> as we dont have nmake installed from visual studion which is required for the default generator.
 # <cmake --build . > 
-# <./Card_War.exe
+# <.\Card_War.exe
 
 # remember to do this all in build directory
 

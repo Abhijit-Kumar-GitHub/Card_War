@@ -6,6 +6,7 @@ using namespace std;
 
 int main() {
     Deck normal_deck;
+    Card card;
 
     // for(const auto& card : normal_deck.getDeck()) {
     //     cout << card.getSuite() << " " << card.getRank() << " (" << card.getValue() << ")" << endl;
@@ -33,6 +34,17 @@ int main() {
     //     cout << card.getSuite() << " " << card.getRank() << " (" << card.getValue() << ")" << endl;
     // }
     // cout << p1.size() << p2.size() << shuffled.size() << endl;
+
+    int k = card.compare(p1[25], p2[25]);
+    if(k == 1){
+        cout << p1[25].getSuite() << " " << p1[25].getRank() << " is greater than" << p2[25].getSuite() << " " << p2[25].getRank() << endl;
+    }else if(k == -1){
+        cout << p1[25].getSuite() << " " << p1[25].getRank() << " is smaller than" << p2[25].getSuite() << " " << p2[25].getRank() << endl;
+        
+    }else{
+        cout << p1[25].getSuite() << " " << p1[25].getRank() << " is equal to" << p2[25].getSuite() << " " << p2[25].getRank() << endl;
+
+    }
 
     return 0;
 }

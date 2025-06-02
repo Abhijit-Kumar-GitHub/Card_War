@@ -8,6 +8,8 @@ using namespace std;
 
 class Card{
     public:
+        Card() : suite(""), rank(""), value(0) {};
+
         Card(const string &suite,const string &rank,const int value) 
             : suite(suite), rank(rank), value(value) {};
 
@@ -16,6 +18,8 @@ class Card{
         int getValue() const {return value;};
 
         void swap(Card &a, Card &b);        // as the shuffle calls to swap the cards and as Card dt is not standard so have to define it.
+
+        int compare(Card &a, Card &b);
 
         // no settters as the cards are immutable and thus should not change after creation and are made const.
 

@@ -13,6 +13,15 @@ void Card::swap(Card &a, Card &b){
     swap(a.value, b.value);
 }
 
+int Card::compare(Card &a, Card &b){
+    if(a.value > b.value){
+        return 1;
+    }else if(a.value < b.value){
+        return -1;
+    }
+    return 0;
+}
+
 const vector<string> Deck::suites_types = {"Hearts", "Diamonds", "Clubs", "Spades"};
 const vector<string> Deck::rank_types = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"}; 
 const vector<int> Deck::value_types = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}; // Jack is 11, Queen is 12, King is 13 and Ace is 14.
